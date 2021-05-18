@@ -1,0 +1,97 @@
+
+body {
+    background-image: url('../images/fondo.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
+}
+header nav ul li a:hover {
+    background-color: rgb(1, 135, 212);
+    color: white;   
+    padding: 10px;
+    font-size: 21px;
+}
+article {
+    padding: 20px;
+}
+.filter {
+    background-color: rgba(179, 179, 179, 0.424);
+}
+#mainBanner {
+    text-align: center;
+    align-items: center;
+}
+#mainBanner figcaption {
+    font-size: 35px;
+    font-weight: bold;
+}
+#mainBanner h2 {
+    border: 3px solid rgb(116, 116, 116);
+    margin: 0px 270px;
+
+}
+.iconos {
+    text-decoration: overline;
+    font-size: 20px;
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+
+}
+footer {
+    background-color: rgb(116, 116, 116);
+    position: fixed;
+    width: 100%;
+}
+footer h2 {
+    text-align: center;
+    padding: 5px;
+}
+/*estilos tabla*/
+.center {
+    margin: auto;
+    padding: auto;
+}
+#table {
+    padding: 20px;
+
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+td a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+tr {
+    background-color: rgb(136, 136, 136);
+}
+tr:nth-child(even) {
+    background-color: rgb(172, 172, 172);
+}
+th {
+    background-color: rgb(1, 135, 212);
+    color: white;
+}
+.info {
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+/*funcion tabla*/
+
+

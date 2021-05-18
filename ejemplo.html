@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="/recursos/js/misFunciones.js"></script>
+    <link rel="stylesheet" href="recursos/css/misEstilos.css">
+</head>
+<body>
+    
+    <p id="miParrafo"></p>
+
+    <ul id="miMenu">
+        <li class="btnStyle"> Menu 1 </li>
+        <li class="btnStyle"> Menu 2 </li>
+        <li class="btnStyle"> Menu 3 </li>
+    </ul>
+
+    <script>
+        let miVentana = window;
+
+        // alert (miVentana.innerWidth);
+
+        document.getElementById('miParrafo').innerHTML = 'El tamaño de la pantalla es:' + miVentana.innerHeight + ' x ' + miVentana.
+        innerWidth;
+
+        let listaMenu = document.querySelectorAll ('#miMenu li');
+         // let listaMenu = document.getElementsByClassName('btnStyle');
+        // let listaMenu = document.getElementsByTagName('li');
+        //Definiendo la funcionalidad de cada elemento del listado Menu
+        /*
+        listaMenu.forEach(function (elemeto, indice, arreglo){
+            //accediento a cada elemento
+            arreglo[indice].onmouseover = function (){
+                alert('Hola');
+            };
+        });
+        */
+       for (let i = 0; i < listaMenu.length; i++ ){
+           listaMenu[i].onmouseover = function (){
+               listaMenu[i].style.backgroundColor = 'cyan';
+           };
+           listaMenu[i].onmouseleave = function (){
+            listaMenu[i].style.backgroundColor = 'white';
+           }
+       }
+
+
+    </script>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus magnam sunt 
+        corporis ducimus veniam amet ullam impedit quam temporibus vel,
+         sit obcaecati officiis perferendis illum doloribus consequuntur architecto? Magnam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus magnam sunt 
+        corporis ducimus veniam amet ullam impedit quam temporibus vel,
+         sit obcaecati officiis perferendis illum doloribus consequuntur architecto? Magnam.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus magnam sunt 
+    corporis ducimus veniam amet ullam impedit quam temporibus vel,
+        sit obcaecati officiis perferendis illum doloribus consequuntur architecto? Magnam.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus magnam sunt 
+        corporis ducimus veniam amet ullam impedit quam temporibus vel,
+         sit obcaecati officiis perferendis illum doloribus consequuntur architecto? Magnam.</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus magnam sunt 
+        corporis ducimus veniam amet ullam impedit quam temporibus vel,
+         sit obcaecati officiis perferendis illum doloribus consequuntur architecto? Magnam.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus magnam sunt 
+        corporis ducimus veniam amet ullam impedit quam temporibus vel,
+         sit obcaecati officiis perferendis illum doloribus consequuntur architecto? Magnam.</p>
+
+
+</body>
+</html>

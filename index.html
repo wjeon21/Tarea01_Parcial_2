@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!--Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" 
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" 
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!--Funciones-->
+    <script src="./recursos/js/JSTarea.js"></script>
+    
+    <!--Hojas de estilo css-->
+    <link rel="stylesheet" href="./recursos/css/botones.css">
+    <link rel="stylesheet" href="./recursos/css/misEstilos.css">
+
+</head>
+
+<body>
+    <header class="filter">
+        <nav>
+             <ul>
+                 <li><a href="#"><i class="fas fa-home fa-1x"></i> Inicio</a></li>
+                 <li><a href="#"><i class="fas fas fa-users fa-1x"></i> Nosotros</a></li>
+                 <li><a href="#"><i class="fab fa-accusoft fa-1x"></i> Portafolio</a></li>
+                 <li><a href="#"><i class="far fa-address-book fa-1x"></i> Contactos</a></li>
+             </ul>
+        </nav> 
+    </header>
+    <main class="filter"> <br>
+
+        <section id="mainBanner">
+            <figure>
+                <img src="./recursos/images/tokyo_logo03.png" alt="">
+                <figcaption>
+                    JUEGOS DE LA XXXII OLIMPIADAS
+                </figcaption> <br>
+            </figure>
+            <h2>Resumen de las diferentes disciplinas que participan</h2>
+        </section>
+       
+        <!--Barra de Menus-->
+        <section>
+            <nav>
+                <ul id="detalle1">
+                    <li class="miBoton styleOne">
+                        <a href="#optAtletismo">Atletismo</a></li>
+                    <li class="miBoton styleTwo">
+                        <a href="#optCiclismo">Ciclismo</a></li>
+                    <li class="miBoton styleFour">
+                        <a href="#optFootball">Football</a></li>
+                    <li class="miBoton styleThree">
+                        <a href="#optJudo">Judo</a></li>
+                    <li class="miBoton styleFour">
+                        <a href="#optHandball">Handball</a></li>
+                    <li class="miBoton styleTwo">
+                        <a href="#optTriatlon">Triatlón</a></li>
+                    <li class="miBoton styleOne">
+                        <a href="#optNatacion">Natación</a></li>
+
+                </ul>
+            </nav>
+        </section>
+        
+        <section class="iconos" id="secDetalles">
+            <article id="optAtletismo" class="oculto opt">
+                <figure>
+                    <img src="./recursos/images/athletics.png" alt="">
+                    <figcaption>
+                        Atletismo
+                    </figcaption>
+                </figure>
+            </article>
+            <article id="optCiclismo" class="oculto opt">
+                <figure>
+                    <img src="recursos/images/cycling.png" alt="">
+                </figure>
+                <figcaption>
+                    Ciclismo
+                </figcaption>
+            </article>
+            <article id="optFootball" class="oculto opt">
+                <figure>
+                    <img src="recursos/images/football.png" alt="">
+                </figure>
+                <figcaption>
+                    Football
+                </figcaption>
+            </article>
+            <article id="optJudo" class="oculto opt">
+                <figure>
+                    <img src="recursos/images/judo.png" alt="">
+                </figure>
+                <figcaption>
+                    Judo
+                </figcaption>
+            </article>
+            <article id="optHandball" class="oculto opt">
+                <figure>
+                    <img src="recursos/images/handball.png" alt="">
+                </figure>
+                <figcaption>
+                    Handball
+                </figcaption>
+            </article>
+            <article id="optTriatlon" class="oculto opt">
+                <figure>
+                    <img src="recursos/images/triathlon.png" alt="">
+                </figure>
+                <figcaption>
+                    Triatlon
+                </figcaption>
+            </article>
+            <article id="optNatacion" class="oculto opt">
+                <figure>
+                    <img src="recursos/images/swimming.png" alt="">
+                </figure>
+                <figcaption>
+                    Natación
+                </figcaption>
+            </article>
+        </section>
+        <!--Programar evento onclick-->
+         <script>
+                //Ocultar los articles
+                var listaArticle = document.querySelectorAll('#secDetalles article');
+
+                 let cantidadItem = listaArticle.length;
+
+                console.log ('cantidad de article: ' + listaArticle.length);
+
+                for (let i = 0; i < cantidadItem; i++){
+                if (listaArticle[i].classList.contains('visible')) {
+                listaArticle[i].classList.add('visible');
+                }
+                listaArticle[i].classList.add('oculta');
+                }
+                //Evento onclick
+                let listaMenus = document.querySelectorAll('#detalle1 li a');
+                for (let j=0; j<listaMenus.length; j++){
+                listaMenus[j].onclick = function() {
+                    if (listaArticle[j].classList.contains('oculto')){
+                    listaArticle[j].classList.remove('oculto');
+                    }
+                    listaArticle[j].classList.add('visible');
+                    listaArticle[j].classList.add('showAnimacion'); 
+                    };
+                };
+        </script>
+
+        <section id="table">
+            <table class="center">
+                <thead>
+                    <tr><th>Encuentro</th>
+                        <th>Locación</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="encuentro">
+                        <td> <button onclick="myFunction()">Encuentro</button>
+                             </td>
+                        <td>Locacion No. 1</td>
+                        <td>08 - 10 am</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="#" id="myBtn2">Encuentro No. 2</a> </td>
+                        <td>Locacion No. 2</td>
+                        <td>10 - 12 am</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="#" id="myBtn3">Encuentro No. 3</a> </td>
+                        <td>Locacion No. 3</td>
+                        <td>02 - 04 pm</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="#" id="myBtn4">Encuentro No. 4</a> </td>
+                        <td>Locacion No. 1</td>
+                        <td>04 - 06 pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="info hide" id="infoEnc">
+            
+                <p id="enc1"></p>
+                
+            <aside id="enc2">
+                <p>Encuentro02 dolor sit amet consectetur adipisicing elit. 
+                    Qui veniam autem tempora <br> maiores itaque corrupti ab eveniet 
+                    accusantium aut? Explicabo?</p>
+                </aside>
+            <aside id="enc3">
+                <p>Encuentro03 dolor sit amet consectetur adipisicing elit. 
+                    Qui veniam autem tempora <br> maiores itaque corrupti ab eveniet 
+                    accusantium aut? Explicabo?</p>
+            </aside>
+            <aside id="enc4">
+                <p>Encuentro04 dolor sit amet consectetur adipisicing elit. 
+                    Qui veniam autem tempora <br> maiores itaque corrupti ab eveniet 
+                    accusantium aut? Explicabo?</p>
+            </aside>
+        </section>
+    </main>
+    
+    <script>
+        /*function myFunction1() {
+            document.getElementById("enc1").classList.add("show");
+        }*/
+        function myFunction() {
+            document.getElementById("enc1").innerHTML = "Encuentro01 dolor sit amet consectetur adipisicing elitQui veniam autem tempora <br> maiores itaque corrupti ab eveniet accusantium aut? Explicabo?";
+        };
+        /*Ocultar los articles*/
+       /* var listaAside = document.querySelectorAll('#InfoEnc aside');
+
+        let cantidadItem = listaAside.length; //Obtiene cantidad de elementos en el arreglo
+
+        console.log ('cantidad de aside: ' + listaAside.length);
+
+        for (let i = 0; i < cantidadDeAside; i++){
+            if (listaAside[i].classList.contains('show')) {
+                listaAside[i].classList.add('show');
+            }
+            listaAside[i].classList.add('hide');
+        }
+        /*programando evento onclick del menu*/
+        /*let listaMenus = document.querySelectorAll('#menu li');
+        for (let j=0; j<listaMenus.length; j++){
+            listaMenus[j].onclick = function() {
+                /*Asegurarme de que todos los demas esten ocultos*/
+               /* for (let k=0; k<listaArticle.length; k++){
+                    if (listaArticle[k].classList.contains('visible')){
+                    listaArticle[k].classList.remove('visible');
+                    listaArticle[k].classList.add('oculta');   
+                     }
+                }
+
+                    if (listaArticle[j].classList.contains('oculta')){
+                    listaArticle[j].classList.remove('oculta');
+                    }
+                    listaArticle[j].classList.add('visible');
+            };
+        }*/
+    </script>
+
+    <footer>
+        <h2>Juegos Olimplicos Tokyo 2021</h2>
+    </footer>
+
+</body>
+
+</html>

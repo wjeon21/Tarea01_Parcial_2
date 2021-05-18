@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.visible {
+    opacity: 1;
+}
+.oculto {
+    opacity: 0;
+}
+.showAnimacion:hover {
+    transform: scale(1.5) ;
+    transition: all 1s ease-in-out 2s;
+}
+/*.hideAnimacion {
+    transform: scale(-1.5) ;
+    transition: all -2s ease-in-out -2s;
+}*/
+ul{
+    display: inline;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ul li  {
+    list-style: none;
+    margin: 5px 10px;
+    padding: 5px;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.miBoton {
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: rgb(1, 135, 212);
+   }
+
+.miBoton a:hover {
+    color: white;
+}
+/*primer estilo revisar*/
+.miBoton.styleOne::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    border: 2px solid rgb(0, 71, 119);
+    transition: top, bottom, left, right, 500ms ease-in-out;
+}
+.miBoton.styleOne:hover::before {
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+}
+/*segundo estilo*/
+.miBoton.styleTwo::before{ 
+    content: ''; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    z-index: -1; 
+    /* Se convierte en el background está una capa mas alejado del usuarios*/
+    background-color: rgba(8, 79, 233, 0.849); 
+    transition: transform 300ms ease-in-out; 
+    transform: scaleX(0); 
+    transform-origin: left; 
+   } 
+   .miBoton.styleTwo:hover::before{ transform: scaleX(1); } 
+   .miBoton.styleTwo { z-index: 1; } 
+
+/*tercer estilo*/
+.miBoton.styleThree::before{ 
+    content: ''; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    z-index: -1; 
+    background-color: rgb(1, 135, 212); 
+    border-radius: 40%; 
+    transition: transform 500ms ease-in-out; 
+    transform: scale(1.5); 
+   } 
+   .miBoton.styleThree:hover::before{ transform:scale(0); } 
+   .miBoton.styleThree{ 
+    z-index: 1; 
+    overflow: hidden; 
+    background-color: rgba(8, 79, 233); 
+    }
+
+    /*cuarto estilo*/
+    .miBoton.styleFour::before{ 
+        content: ''; 
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        height: 2px; 
+        background-color: rgba(8, 79, 233, 0.849); 
+        transition: transform 300ms ease-in-out; 
+        transform: scaleX(0); 
+       } 
+       .miBoton.styleFour:hover::before{ transform: scaleX(1); }
