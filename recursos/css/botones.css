@@ -40,7 +40,7 @@ ul li a {
     box-sizing: border-box;
     border: none;
     outline: none;
-    background-color: rgb(1, 135, 212);
+    background-color: rgb(230, 134, 96);
    }
 
 .miBoton a:hover {
@@ -55,7 +55,7 @@ ul li a {
     left: 0px;
     right: 0px;
     z-index: -1;
-    border: 2px solid rgb(0, 71, 119);
+    border: 2px solid rgb(185, 87, 48);
     transition: top, bottom, left, right, 500ms ease-in-out;
 }
 .miBoton.styleOne:hover::before {
@@ -74,7 +74,7 @@ ul li a {
     bottom: 0px; 
     z-index: -1; 
     /* Se convierte en el background está una capa mas alejado del usuarios*/
-    background-color: rgba(8, 79, 233, 0.849); 
+    background-color: rgb(185, 87, 48); 
     transition: transform 300ms ease-in-out; 
     transform: scaleX(0); 
     transform-origin: left; 
@@ -91,7 +91,7 @@ ul li a {
     right: 0px; 
     bottom: 0px; 
     z-index: -1; 
-    background-color: rgb(1, 135, 212); 
+    background-color: rgb(230, 134, 96); 
     border-radius: 40%; 
     transition: transform 500ms ease-in-out; 
     transform: scale(1.5); 
@@ -100,7 +100,7 @@ ul li a {
    .miBoton.styleThree{ 
     z-index: 1; 
     overflow: hidden; 
-    background-color: rgba(8, 79, 233); 
+    background-color: rgb(185, 87, 48); 
     }
 
     /*cuarto estilo*/
@@ -111,7 +111,7 @@ ul li a {
         right: 0; 
         bottom: 0; 
         height: 2px; 
-        background-color: rgba(8, 79, 233, 0.849); 
+        background-color: rgb(185, 87, 48); 
         transition: transform 300ms ease-in-out; 
         transform: scaleX(0); 
        } 

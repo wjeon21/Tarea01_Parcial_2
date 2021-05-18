@@ -1,23 +1,23 @@
 
 body {
-    background-image: url('../images/fondo.jpg');
+    background-image: url('../images/fondo3.jpg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(3px);
 }
 header nav ul li a:hover {
-    background-color: rgb(1, 135, 212);
+    background-color: rgb(230, 134, 96);
     color: white;   
-    padding: 10px;
-    font-size: 21px;
+    margin: 5px 10px;
+    padding: 5px 8px;
 }
 article {
     padding: 20px;
 }
 .filter {
-    background-color: rgba(179, 179, 179, 0.424);
+    background-color: rgba(129, 129, 129, 0.5);
 }
 #mainBanner {
     text-align: center;
@@ -26,10 +26,12 @@ article {
 #mainBanner figcaption {
     font-size: 35px;
     font-weight: bold;
+    color: black;
 }
 #mainBanner h2 {
-    border: 3px solid rgb(116, 116, 116);
-    margin: 0px 270px;
+    border-top: 3px solid rgb(230, 134, 96);
+    margin: 0px 250px;
+    color: black;
 
 }
 .iconos {
@@ -41,7 +43,6 @@ article {
 
 }
 footer {
-    background-color: rgb(116, 116, 116);
     position: fixed;
     width: 100%;
 }
@@ -73,13 +74,13 @@ td a {
     font-weight: bold;
 }
 tr {
-    background-color: rgb(136, 136, 136);
+    background-color: rgb(230, 134, 96);
 }
 tr:nth-child(even) {
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(247, 164, 131);
 }
 th {
-    background-color: rgb(1, 135, 212);
+    background-color: rgb(185, 87, 48);
     color: white;
 }
 .info {
@@ -97,6 +98,17 @@ h3 {
 .show {
     display: block;
 }
-/*funcion tabla*/
+.botones {
+    color: black;
+    background-color: rgb(247, 164, 131);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 3px solid rgb(185, 87, 48);
+}
+.botones:hover {
+    background-color: rgb(185, 87, 48);
+}
 
 

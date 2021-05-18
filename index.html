@@ -176,25 +176,25 @@
                 </thead>
                 <tbody>
                     <tr class="encuentro">
-                        <td> <button id="myBtn1">Encuentro No. 1</button> 
+                        <td> <button id="myBtn1" class="botones">Encuentro No. 1</button> 
                          </td>
                         <td>Tokyo Stadium</td>
                         <td>08 - 10 am</td>
                     </tr>
                     <tr>
-                        <td> <button id="myBtn2">Encuentro No. 2</button> 
+                        <td> <button id="myBtn2" class="botones">Encuentro No. 2</button> 
                         </td>
                         <td>Yokohama Stadium</td>
                         <td>10 - 12 am</td>
                     </tr>
                     <tr>
-                        <td> <button id="myBtn3">Encuentro No. 3</button> 
+                        <td> <button id="myBtn3" class="botones">Encuentro No. 3</button> 
                         </td>
                         <td>Sakura Stadium</td>
                         <td>02 - 04 pm</td>
                     </tr>
                     <tr>
-                        <td> <button id="myBtn4">Encuentro No. 4</button> 
+                        <td> <button id="myBtn4" class="botones">Encuentro No. 4</button> 
                         </td>
                         <td>Kyoto Tokyu Stadium</td>
                         <td>04 - 06 pm</td>
@@ -252,59 +252,20 @@
         let boton3;
         boton3 = document.getElementById('myBtn3');
 
-        boton2.onclick = function () {
+        boton3.onclick = function () {
             document.getElementById('enc3').classList.remove('hide');
             document.getElementById('enc3').classList.add('show');
         };
         let boton4;
         boton4 = document.getElementById('myBtn4');
 
-        boton2.onclick = function () {
+        boton4.onclick = function () {
             document.getElementById('enc4').classList.remove('hide');
             document.getElementById('enc4').classList.add('show');
         };
-
-        /*function myFunction1() {
-            document.getElementById("enc1").classList.add("show");
-        }
-        function myFunction1() {
-            document.getElementById("enc1").
-            innerHTML = "Encuentro01 dolor sit amet consectetur adipisicing elitQui veniam autem tempora <br> maiores itaque corrupti ab eveniet accusantium aut? Explicabo?";
-        }
-        /*Ocultar los articles*/
-       /* var listaAside = document.querySelectorAll('#InfoEnc aside');
-
-        let cantidadItem = listaAside.length; //Obtiene cantidad de elementos en el arreglo
-
-        console.log ('cantidad de aside: ' + listaAside.length);
-
-        for (let i = 0; i < cantidadDeAside; i++){
-            if (listaAside[i].classList.contains('show')) {
-                listaAside[i].classList.add('show');
-            }
-            listaAside[i].classList.add('hide');
-        }
-        /*programando evento onclick del menu*/
-        /*let listaMenus = document.querySelectorAll('#menu li');
-        for (let j=0; j<listaMenus.length; j++){
-            listaMenus[j].onclick = function() {
-                /*Asegurarme de que todos los demas esten ocultos*/
-               /* for (let k=0; k<listaArticle.length; k++){
-                    if (listaArticle[k].classList.contains('visible')){
-                    listaArticle[k].classList.remove('visible');
-                    listaArticle[k].classList.add('oculta');   
-                     }
-                }
-
-                    if (listaArticle[j].classList.contains('oculta')){
-                    listaArticle[j].classList.remove('oculta');
-                    }
-                    listaArticle[j].classList.add('visible');
-            };
-        }*/
     </script>
 
-    <footer>
+    <footer class="filter">
         <h2>Juegos Olimplicos Tokyo 2021</h2>
     </footer>
 
