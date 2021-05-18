@@ -176,58 +176,101 @@
                 </thead>
                 <tbody>
                     <tr class="encuentro">
-                        <td> <button onclick="myFunction()">Encuentro</button>
-                             </td>
-                        <td>Locacion No. 1</td>
+                        <td> <button id="myBtn1">Encuentro No. 1</button> 
+                         </td>
+                        <td>Tokyo Stadium</td>
                         <td>08 - 10 am</td>
                     </tr>
                     <tr>
-                        <td> <a href="#" id="myBtn2">Encuentro No. 2</a> </td>
-                        <td>Locacion No. 2</td>
+                        <td> <button id="myBtn2">Encuentro No. 2</button> 
+                        </td>
+                        <td>Yokohama Stadium</td>
                         <td>10 - 12 am</td>
                     </tr>
                     <tr>
-                        <td> <a href="#" id="myBtn3">Encuentro No. 3</a> </td>
-                        <td>Locacion No. 3</td>
+                        <td> <button id="myBtn3">Encuentro No. 3</button> 
+                        </td>
+                        <td>Sakura Stadium</td>
                         <td>02 - 04 pm</td>
                     </tr>
                     <tr>
-                        <td> <a href="#" id="myBtn4">Encuentro No. 4</a> </td>
-                        <td>Locacion No. 1</td>
+                        <td> <button id="myBtn4">Encuentro No. 4</button> 
+                        </td>
+                        <td>Kyoto Tokyu Stadium</td>
                         <td>04 - 06 pm</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <section class="info hide" id="infoEnc">
-            
-                <p id="enc1"></p>
-                
-            <aside id="enc2">
-                <p>Encuentro02 dolor sit amet consectetur adipisicing elit. 
-                    Qui veniam autem tempora <br> maiores itaque corrupti ab eveniet 
-                    accusantium aut? Explicabo?</p>
-                </aside>
-            <aside id="enc3">
-                <p>Encuentro03 dolor sit amet consectetur adipisicing elit. 
-                    Qui veniam autem tempora <br> maiores itaque corrupti ab eveniet 
-                    accusantium aut? Explicabo?</p>
+        <section class="info" id="infoEnc">
+            <aside id="enc1" class="hide">
+                <h3>東京駅</h3>
+                <p> 
+                    1-chome 9, Marunouchi, Chiyoda-ku, Tokyo 100-0005, Japón <br>
+                    〒100-0005 東京都千代田区丸の内１丁目９
+                </p>
             </aside>
-            <aside id="enc4">
-                <p>Encuentro04 dolor sit amet consectetur adipisicing elit. 
-                    Qui veniam autem tempora <br> maiores itaque corrupti ab eveniet 
-                    accusantium aut? Explicabo?</p>
+            <aside id="enc2" class="hide">
+                <h3>新横浜ラーメン博物館</h3>
+                <p> 
+                    2-chome 14-21, Shinyokohama, Kohoku-ku, Yokohama, Kanagawa 222-0033, Japón <br>
+                    〒222-0033 神奈川県横浜市港北区新横浜２丁目14-21
+                </p>
+                </aside>
+            <aside id="enc3" class="hide">
+                <h3>ホテルサクラ</h3>
+                <p>  
+                    3-chome 8-24, Ueshio, Tennōji-ku, Osaka, 543-0002, Japón <br>
+                    〒543-0002 大阪府大阪市天王寺区上汐３丁目８−24
+                </p>
+            </aside>
+            <aside id="enc4" class="hide">
+                <h3>【京都東急ホテル】</h3>
+                <p>  
+                    Gojo-sagaru, Horikawa-dori, Shimogyo-ku, Kyoto, Kyoto 600-8519, Japón <br>
+                    〒600-8519 京都府京都市下京区堀川通五条下ル
+                </p>
             </aside>
         </section>
     </main>
     
     <script>
+        let boton;
+        boton = document.getElementById('myBtn1');
+
+        boton.onclick = function () {
+            document.getElementById('enc1').classList.remove('hide');
+            document.getElementById('enc1').classList.add('show');
+        };
+        let boton2;
+        boton2 = document.getElementById('myBtn2');
+
+        boton2.onclick = function () {
+            document.getElementById('enc2').classList.remove('hide');
+            document.getElementById('enc2').classList.add('show');
+        };
+        let boton3;
+        boton3 = document.getElementById('myBtn3');
+
+        boton2.onclick = function () {
+            document.getElementById('enc3').classList.remove('hide');
+            document.getElementById('enc3').classList.add('show');
+        };
+        let boton4;
+        boton4 = document.getElementById('myBtn4');
+
+        boton2.onclick = function () {
+            document.getElementById('enc4').classList.remove('hide');
+            document.getElementById('enc4').classList.add('show');
+        };
+
         /*function myFunction1() {
             document.getElementById("enc1").classList.add("show");
-        }*/
-        function myFunction() {
-            document.getElementById("enc1").innerHTML = "Encuentro01 dolor sit amet consectetur adipisicing elitQui veniam autem tempora <br> maiores itaque corrupti ab eveniet accusantium aut? Explicabo?";
-        };
+        }
+        function myFunction1() {
+            document.getElementById("enc1").
+            innerHTML = "Encuentro01 dolor sit amet consectetur adipisicing elitQui veniam autem tempora <br> maiores itaque corrupti ab eveniet accusantium aut? Explicabo?";
+        }
         /*Ocultar los articles*/
        /* var listaAside = document.querySelectorAll('#InfoEnc aside');
 
